@@ -22,6 +22,7 @@ header {
 	background: #212121;
 	padding: 20px 0;
 	position: relative;
+    transition: all .8s;
 }
 
 .nav-container {
@@ -39,12 +40,6 @@ header {
 	font-weight: 700;
 	color: #FFFFFF;
 }
-
-.toggle-icon {
-    display: inline-block;
-    cursor: pointer;
-  }
-  
   .bar1, .bar2, .bar3 {
     width: 35px;
     height: 4px;
@@ -54,7 +49,7 @@ header {
   }
   
   .change .bar1 {
-    transform: translate(0, 11px) rotate(-45deg);
+    transform: translate(0, 9px) rotate(-45deg);
   }
   
   .change .bar2 {opacity: 0;}
@@ -86,15 +81,20 @@ header {
         opacity: 1;
     }
 
-	.menu {
-		display: none;
-		position: absolute;
-		top: 100%;
-		left: 0;
-		width: 100%;
-		background: #04AA6D;
-		padding: 20px;
-	}
+    .menu {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        background: #04AA6D;
+        padding: 20px;
+        transition: all .6s;
+    }
+
+    .menu-bar-responsive {
+       left: 0;
+    }
 	.menu ul {
 		text-align: center;
 	}

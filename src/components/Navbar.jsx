@@ -24,13 +24,13 @@ const Navbar = () => {
                         <a href="#">BONIAMIN</a>
                     </div>
 			
-                    <div className={`toggle-icon menu-icon ${isActive ? 'change' : ''}`} onClick={handleMenuClick}>
+                    <div className={`toggle-icon menu-icon toggle-menu-icon ${isActive? 'change' : ''}`} onClick={handleMenuClick}>
                         <div className="bar1"></div>
                         <div className="bar2"></div>
                         <div className="bar3"></div>
                     </div>
 
-                    <div className="menu">
+                    <div className={`menu ${isActive? 'menu-bar-responsive' : ''}`}>
                         <ul>
                             <li><a href="#">Home</a></li>
                             <li><a href="#">About</a></li>
